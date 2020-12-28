@@ -96,12 +96,12 @@ public class mainClass extends JPanel {
     }
     
 
-    public void createDirectory() throws IOException, IOException {
-        if(!new File(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/").isDirectory()){
-            Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
-            Files.createDirectories(path);
-        }
-    }
+    // public void createDirectory() throws IOException, IOException {
+    //     if(!new File(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/").isDirectory()){
+    //         Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
+    //         Files.createDirectories(path);
+    //     }
+    // }
 
     public String generateRandomNitroCode(){
         String[] characters = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
