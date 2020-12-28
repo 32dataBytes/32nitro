@@ -1,27 +1,19 @@
-import com.formdev.flatlaf.FlatLaf;
-import com.formdev.flatlaf.FlatLightLaf;
-import java.util.Random;
-
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.awt.event.*;
 import javax.swing.*;
+import javax.swing.event.*;
 
 public class mainClass extends JPanel {
     private JMenuBar menuBar;
     private JLabel informationLabel;
     private JList nitroOutputList;
-    private JLabel NitroOutputLabel;
-    private JToggleButton startstop;
+    private JLabel jcomp4;
+    private JButton activate;
+    private JLabel upperLabel;
+    private JTextField codeAmount;
+    private JLabel underLabel;
 
-    public mainClass() throws IOException {
-        FlatLightLaf.install();
-        createDirectory();
-
+    public mainClass() {
         //construct preComponents
         JMenu fileMenu = new JMenu ("File");
         JMenuItem save_file_as___Item = new JMenuItem ("Save File As...");
@@ -43,60 +35,39 @@ public class mainClass extends JPanel {
         menuBar.add (infoMenu);
         informationLabel = new JLabel ("32nitro");
         nitroOutputList = new JList (nitroOutputListItems);
-        NitroOutputLabel = new JLabel ("Nitro Ouput:");
-        startstop = new JToggleButton ("OFF", false);
+        jcomp4 = new JLabel ("Nitro Ouput:");
+        activate = new JButton ("START");
+        upperLabel = new JLabel ("Generate");
+        codeAmount = new JTextField (5);
+        underLabel = new JLabel ("codes.");
 
         //adjust size and set layout
-        setPreferredSize (new Dimension (335, 350));
+        setPreferredSize (new Dimension (348, 223));
         setLayout (null);
 
         //add components
         add (menuBar);
         add (informationLabel);
         add (nitroOutputList);
-        add (NitroOutputLabel);
-        add (startstop);
+        add (jcomp4);
+        add (activate);
+        add (upperLabel);
+        add (codeAmount);
+        add (underLabel);
 
         //set component bounds (only needed by Absolute Positioning)
-        menuBar.setBounds (0, 0, 335, 30);
+        menuBar.setBounds (0, 0, 410, 30);
         informationLabel.setBounds (5, 30, 100, 25);
-        nitroOutputList.setBounds (5, 105, 250, 250);
-        NitroOutputLabel.setBounds (5, 80, 100, 25);
-        startstop.setBounds (255, 105, 75, 250);
-
-    }
-
-    public void createDirectory() throws IOException {
-        if(!new File(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/").isDirectory()){
-            Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
-            Files.createDirectories(path);
-        }
-    }
-
-    public void generateNitro(JToggleButton toggleButton, JList nitroList){
-        while(toggleButton.isSelected()){
-            ArrayList<String> temp = new ArrayList<String>();
-            for (int i = 0; i < nitroList.getModel().getSize(); i++) {
-                temp.add(nitroList.getModel().getElementAt(i).toString());
-            }
-            temp.add(generateRandomNitroCode());
-            nitroList.setListData(temp.toArray(new String[0]));
-        }
-    }
-
-    public String generateRandomNitroCode(){
-        String[] characters = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-        String nitroURL = "https://discord.gift/";
-        Random randomSystem = new Random();
-        for (int i = 0; i < 17; i++) {
-            nitroURL = nitroURL.concat(characters[randomSystem.nextInt(characters.length)]);
-        }
-        return nitroURL;
+        nitroOutputList.setBounds (5, 105, 245, 110);
+        jcomp4.setBounds (5, 80, 100, 25);
+        activate.setBounds (265, 180, 75, 35);
+        upperLabel.setBounds (265, 110, 85, 25);
+        codeAmount.setBounds (265, 135, 50, 20);
+        underLabel.setBounds (265, 155, 100, 25);
     }
 
 
-
-    public static void main (String[] args) throws IOException {
+    public static void main (String[] args) {
         JFrame frame = new JFrame ("32nitro");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add (new mainClass());

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Install FlightLightLAF for the UI">
+    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Import Random, update generateRandomNitroCode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
     </list>
@@ -49,6 +49,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="mainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainClass" />
+      <module name="32nitro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.mainClass" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609129470227</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Import Random, update generateRandomNitroCode">
+      <created>1609131222403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609131222403</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,7 +140,8 @@
     <MESSAGE value="Install FlightLightLAF for the UI" />
     <MESSAGE value="Adjust window size" />
     <MESSAGE value="Add nitroList updating function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add nitroList updating function" />
+    <MESSAGE value="Import Random, update generateRandomNitroCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import Random, update generateRandomNitroCode" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1609126469996">
@@ -130,9 +152,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="215" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609126476930" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609129473595">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609131675021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609129473595" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609131675021" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609131675021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609131675021" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609131675020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609131675020" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609131675021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609131675021" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609131269143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609131269143" />
   </component>
 </project>
