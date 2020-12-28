@@ -45,7 +45,7 @@ public class aboutMenu extends JPanel {
     }
 
 
-    public static void main (String[] args) {
+    public static void main () {
         JFrame frame = new JFrame ("About");
         frame.setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().add (new aboutMenu());
