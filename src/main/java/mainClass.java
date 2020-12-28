@@ -131,7 +131,13 @@ public class mainClass extends JPanel {
             }
         });
 
+        aboutItem.addActionListener(openAboutMenu ->{
+            aboutMenu.main();
+        });
 
+        creditsItem.addActionListener(openCreditsMenu ->{
+            creditsMenu.main();
+        });
 
 
 

@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="#1 Fixed&#10;A component can only have 1 parent, which meant the list itself couldn't be added lest it ovveride the scrollPane it's been given">
+    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="install FlatLightLAF on creditsMenu.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aboutMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aboutMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +186,84 @@
       <option name="project" value="LOCAL" />
       <updated>1609191145427</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Decommission createDirectory">
+      <created>1609191833527</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609191833527</updated>
+    </task>
+    <task id="LOCAL-00015" summary="saveFile Menu Tab">
+      <created>1609192626272</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609192626272</updated>
+    </task>
+    <task id="LOCAL-00016" summary="File Tab as an entirety">
+      <created>1609193235173</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609193235173</updated>
+    </task>
+    <task id="LOCAL-00017" summary="discordItem">
+      <created>1609193431705</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609193431705</updated>
+    </task>
+    <task id="LOCAL-00018" summary="aboutMenu.java">
+      <created>1609193488975</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609193488975</updated>
+    </task>
+    <task id="LOCAL-00019" summary="creditsMenu.java">
+      <created>1609193522265</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609193522265</updated>
+    </task>
+    <task id="LOCAL-00020" summary="aboutMenu.java GUI">
+      <created>1609193919546</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609193919546</updated>
+    </task>
+    <task id="LOCAL-00021" summary="creditsMenu.java GUI">
+      <created>1609194034246</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194034246</updated>
+    </task>
+    <task id="LOCAL-00022" summary="openGithub Button">
+      <created>1609194112672</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194112672</updated>
+    </task>
+    <task id="LOCAL-00023" summary="disposeOnClose creditsMenu.java">
+      <created>1609194147077</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194147077</updated>
+    </task>
+    <task id="LOCAL-00024" summary="install FlatLightLAF on creditsMenu.java">
+      <created>1609194172246</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194172246</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +291,18 @@
     <MESSAGE value="Allow scrolling" />
     <MESSAGE value="reinstall flatlaf&#10;&#10;I can't get it to scroll idk JList woke up and chose violence" />
     <MESSAGE value="#1 Fixed&#10;A component can only have 1 parent, which meant the list itself couldn't be added lest it ovveride the scrollPane it's been given" />
-    <option name="LAST_COMMIT_MESSAGE" value="#1 Fixed&#10;A component can only have 1 parent, which meant the list itself couldn't be added lest it ovveride the scrollPane it's been given" />
+    <MESSAGE value="Decommission createDirectory" />
+    <MESSAGE value="saveFile Menu Tab" />
+    <MESSAGE value="File Tab as an entirety" />
+    <MESSAGE value="discordItem" />
+    <MESSAGE value="aboutMenu.java" />
+    <MESSAGE value="creditsMenu.java" />
+    <MESSAGE value="aboutMenu.java GUI" />
+    <MESSAGE value="creditsMenu.java GUI" />
+    <MESSAGE value="openGithub Button" />
+    <MESSAGE value="disposeOnClose creditsMenu.java" />
+    <MESSAGE value="install FlatLightLAF on creditsMenu.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="install FlatLightLAF on creditsMenu.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1609132409611">
@@ -244,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609190897335" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609191738634">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609194173819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609191738634" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609194173819" />
     <state x="494" y="255" width="932" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609134195752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
