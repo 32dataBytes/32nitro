@@ -42,7 +42,7 @@ public class creditsMenu extends JPanel {
 
     public static void main (String[] args) {
         JFrame frame = new JFrame ("Credits");
-        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().add (new creditsMenu());
         frame.pack();
         frame.setVisible (true);
