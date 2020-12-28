@@ -7,8 +7,8 @@ public class mainClass extends JPanel {
     private JMenuBar menuBar;
     private JLabel informationLabel;
     private JList nitroOutputList;
-    private JLabel jcomp4;
-    private JToggleButton jcomp5;
+    private JLabel NitroOutputLabel;
+    private JToggleButton startstop;
 
     public mainClass() {
         //construct preComponents
@@ -32,8 +32,8 @@ public class mainClass extends JPanel {
         menuBar.add (infoMenu);
         informationLabel = new JLabel ("32nitro");
         nitroOutputList = new JList (nitroOutputListItems);
-        jcomp4 = new JLabel ("Nitro Ouput:");
-        jcomp5 = new JToggleButton ("OFF", false);
+        NitroOutputLabel = new JLabel ("Nitro Ouput:");
+        startstop = new JToggleButton ("OFF", false);
 
         //adjust size and set layout
         setPreferredSize (new Dimension (335, 358));
@@ -43,15 +43,15 @@ public class mainClass extends JPanel {
         add (menuBar);
         add (informationLabel);
         add (nitroOutputList);
-        add (jcomp4);
-        add (jcomp5);
+        add (NitroOutputLabel);
+        add (startstop);
 
         //set component bounds (only needed by Absolute Positioning)
         menuBar.setBounds (0, 0, 335, 30);
         informationLabel.setBounds (5, 30, 100, 25);
         nitroOutputList.setBounds (5, 105, 250, 250);
-        jcomp4.setBounds (5, 80, 100, 25);
-        jcomp5.setBounds (255, 105, 75, 250);
+        NitroOutputLabel.setBounds (5, 80, 100, 25);
+        startstop.setBounds (255, 105, 75, 250);
     }
 
 
