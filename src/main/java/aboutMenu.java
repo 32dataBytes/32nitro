@@ -24,7 +24,7 @@ public class aboutMenu extends JPanel {
         aboutLabel6 = new JLabel ("32dataBytes#8475.");
 
         //adjust size and set layout
-        setPreferredSize (new Dimension (264, 160));
+        setPreferredSize (new Dimension (260, 160));
         setLayout (null);
 
         //add components
