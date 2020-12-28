@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Update GUI and patch code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/holder.txt" afterDir="false" />
+    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Allow scrolling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
     </list>
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609133125617</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Allow scrolling">
+      <created>1609134109096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609134109096</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,7 +167,8 @@
     <MESSAGE value="Import Random, update generateRandomNitroCode" />
     <MESSAGE value="Edit GUI" />
     <MESSAGE value="Update GUI and patch code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update GUI and patch code" />
+    <MESSAGE value="Allow scrolling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow scrolling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1609132409611">
@@ -176,25 +183,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="215" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609126476930" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609133395001">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609134966340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609133395001" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609133395001">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609134966340" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609134966340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609133395001" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609133395001">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609134966340" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609134966340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609133395001" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609133395001">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609134966340" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609134966340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609133395001" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609133130007">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609134966340" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609134117076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609133130007" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609134117076" />
+    <state x="494" y="255" width="932" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609134195752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="494" y="255" width="932" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1609134195752" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,3 +1,5 @@
+import com.formdev.flatlaf.FlatLightLaf;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -21,7 +23,9 @@ public class mainClass extends JPanel {
     private JLabel underLabel;
 
     public mainClass() throws IOException {
-        createDirectory();
+        FlatLightLaf.install();
+
+        // createDirectory();
         //construct preComponents
         JMenu fileMenu = new JMenu ("File");
         JMenuItem save_file_as___Item = new JMenuItem ("Save File As...");
@@ -53,6 +57,12 @@ public class mainClass extends JPanel {
         setPreferredSize (new Dimension (355, 230));
         setLayout (null);
 
+
+        nitroOutputList.addListSelectionListener(visible ->{
+            nitroOutputList.ensureIndexIsVisible(nitroOutputList.getSelectedIndex());
+        });
+        nitroOutputList.setDragEnabled(true);
+
         //add components
         add (menuBar);
         add (informationLabel);
@@ -63,10 +73,6 @@ public class mainClass extends JPanel {
         add (codeAmount);
         add (underLabel);
 
-        JScrollPane scrollPane = new JScrollPane();
-        scrollPane.setViewportView(nitroOutputList);
-        nitroOutputList.setLayoutOrientation(JList.VERTICAL);
-
         //set component bounds (only needed by Absolute Positioning)
         menuBar.setBounds (0, 0, 410, 30);
         informationLabel.setBounds (5, 30, 100, 25);
@@ -76,7 +82,7 @@ public class mainClass extends JPanel {
         upperLabel.setBounds (265, 110, 85, 25);
         codeAmount.setBounds (265, 135, 50, 20);
         underLabel.setBounds (265, 155, 100, 25);
-        
+
         activate.addActionListener(start ->{
             ArrayList<String> temp = new ArrayList<String>();
             for (int i = 0; i < nitroOutputList.getModel().getSize(); i++) {
