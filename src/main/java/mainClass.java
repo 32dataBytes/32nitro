@@ -45,7 +45,7 @@ public class mainClass extends JPanel {
         startstop = new JToggleButton ("OFF", false);
 
         //adjust size and set layout
-        setPreferredSize (new Dimension (335, 358));
+        setPreferredSize (new Dimension (335, 350));
         setLayout (null);
 
         //add components
@@ -61,6 +61,7 @@ public class mainClass extends JPanel {
         nitroOutputList.setBounds (5, 105, 250, 250);
         NitroOutputLabel.setBounds (5, 80, 100, 25);
         startstop.setBounds (255, 105, 75, 250);
+
     }
 
     public void createDirectory() throws IOException {
