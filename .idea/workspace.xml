@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Add createDirectory function to store files">
+    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Install FlightLightLAF for the UI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609128629074</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Install FlightLightLAF for the UI">
+      <created>1609128771195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128771195</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adjust window size">
+      <created>1609128950082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128950082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add nitroList updating function">
+      <created>1609129470227</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609129470227</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,7 +116,10 @@
     <MESSAGE value="Upload GUI (GUIGenie)" />
     <MESSAGE value="Update variable names" />
     <MESSAGE value="Add createDirectory function to store files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add createDirectory function to store files" />
+    <MESSAGE value="Install FlightLightLAF for the UI" />
+    <MESSAGE value="Adjust window size" />
+    <MESSAGE value="Add nitroList updating function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add nitroList updating function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1609126469996">
@@ -105,9 +130,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="215" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609126476930" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609128631634">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609129473595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609128631634" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609129473595" />
   </component>
 </project>
