@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URI;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Random;
@@ -121,6 +122,16 @@ public class mainClass extends JPanel {
                 }
             }
         });
+
+        discordItem.addActionListener(openDiscord ->{
+            try {
+                Desktop.getDesktop().browse(URI.create("https://discord.gg/vsJZQRKzYq"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+
 
 
 
