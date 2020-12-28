@@ -20,6 +20,7 @@ public class mainClass extends JPanel {
     private JLabel upperLabel;
     private JTextField codeAmount;
     private JLabel underLabel;
+    private JFileChooser fileChooser;
 
     public mainClass() throws IOException {
         FlatLightLaf.install();
@@ -51,6 +52,7 @@ public class mainClass extends JPanel {
         upperLabel = new JLabel ("Generate");
         codeAmount = new JTextField (5);
         underLabel = new JLabel ("codes.");
+        fileChooser = new JFileChooser();
 
         //adjust size and set layout
         setPreferredSize (new Dimension (355, 230));
@@ -100,7 +102,26 @@ public class mainClass extends JPanel {
             long unixTime = Instant.now().getEpochSecond();
             String filename = new File("").getAbsolutePath() + String.valueOf(unixTime) + ".txt";
             saveStringList(filename, data.get());
+            try {
+                Desktop.getDesktop().open(new File(filename));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
+
+        save_file_as___Item.addActionListener(saveFile ->{
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+            Integer returnedValue = fileChooser.showOpenDialog(mainClass.this);
+            if(returnedValue == JFileChooser.APPROVE_OPTION){
+                if(fileChooser.getSelectedFile().isDirectory()){
+                    long unixTime = Instant.now().getEpochSecond();
+                    saveStringList(fileChooser.getSelectedFile().getAbsolutePath() + String.valueOf(unixTime) + ".txt", data.get());
+                } else {
+                    saveStringList(fileChooser.getSelectedFile().getAbsolutePath(), data.get());
+                }
+            }
+        });
+
 
 
     }
