@@ -50,7 +50,7 @@ public class mainClass extends JPanel {
         underLabel = new JLabel ("codes.");
 
         //adjust size and set layout
-        setPreferredSize (new Dimension (348, 223));
+        setPreferredSize (new Dimension (355, 230));
         setLayout (null);
 
         //add components
@@ -62,6 +62,10 @@ public class mainClass extends JPanel {
         add (upperLabel);
         add (codeAmount);
         add (underLabel);
+
+        JScrollPane scrollPane = new JScrollPane();
+        scrollPane.setViewportView(nitroOutputList);
+        nitroOutputList.setLayoutOrientation(JList.VERTICAL);
 
         //set component bounds (only needed by Absolute Positioning)
         menuBar.setBounds (0, 0, 410, 30);
