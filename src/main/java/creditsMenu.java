@@ -1,3 +1,5 @@
+import com.formdev.flatlaf.FlatLightLaf;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
@@ -11,6 +13,7 @@ public class creditsMenu extends JPanel {
     private JButton githubButton;
 
     public creditsMenu() {
+        FlatLightLaf.install();
         //construct components
         nameLabel = new JLabel ("32dataBytes");
         discordLabel = new JLabel ("32dataBytes#8475");
