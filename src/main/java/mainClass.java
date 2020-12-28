@@ -58,15 +58,13 @@ public class mainClass extends JPanel {
         setLayout (null);
 
 
-        nitroOutputList.addListSelectionListener(visible ->{
-            nitroOutputList.ensureIndexIsVisible(nitroOutputList.getSelectedIndex());
-        });
-        nitroOutputList.setDragEnabled(true);
+        JScrollPane scrollPane = new JScrollPane();
+        scrollPane.setViewportView(nitroOutputList);
 
         //add components
         add (menuBar);
         add (informationLabel);
-        add (nitroOutputList);
+        add (scrollPane);
         add (nitroOutputLabel);
         add (activate);
         add (upperLabel);
@@ -82,6 +80,7 @@ public class mainClass extends JPanel {
         upperLabel.setBounds (265, 110, 85, 25);
         codeAmount.setBounds (265, 135, 50, 20);
         underLabel.setBounds (265, 155, 100, 25);
+        scrollPane.setBounds (5, 105, 245, 110);
 
         activate.addActionListener(start ->{
             ArrayList<String> temp = new ArrayList<String>();
