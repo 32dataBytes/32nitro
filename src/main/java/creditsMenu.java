@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
+import java.net.URI;
 import javax.swing.*;
 import javax.swing.event.*;
 
@@ -27,6 +29,14 @@ public class creditsMenu extends JPanel {
         nameLabel.setBounds (5, 5, 100, 25);
         discordLabel.setBounds (5, 30, 110, 25);
         githubButton.setBounds (5, 55, 100, 25);
+
+        githubButton.addActionListener(openGithub ->{
+            try {
+                Desktop.getDesktop().browse(URI.create("https://github.com/32dataBytes"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 
 
