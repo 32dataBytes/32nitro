@@ -1,16 +1,15 @@
 import com.formdev.flatlaf.FlatLightLaf;
 
 import java.awt.*;
-import java.awt.event.*;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.PrintWriter;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicReference;
 import javax.swing.*;
-import javax.swing.event.*;
 
 public class mainClass extends JPanel {
     private JMenuBar menuBar;
@@ -82,6 +81,8 @@ public class mainClass extends JPanel {
         underLabel.setBounds (265, 155, 100, 25);
         scrollPane.setBounds (5, 105, 245, 110);
 
+
+        AtomicReference<ArrayList<String>> data = new AtomicReference<>(new ArrayList<String>());
         activate.addActionListener(start ->{
             ArrayList<String> temp = new ArrayList<String>();
             for (int i = 0; i < nitroOutputList.getModel().getSize(); i++) {
@@ -92,16 +93,30 @@ public class mainClass extends JPanel {
                 temp.add(generateRandomNitroCode());
                 nitroOutputList.setListData(temp.toArray(new String[0]));
             }
+            data.set(temp);
         });
-    }
-    
 
-    // public void createDirectory() throws IOException, IOException {
-    //     if(!new File(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/").isDirectory()){
-    //         Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
-    //         Files.createDirectories(path);
-    //     }
-    // }
+        save_fileItem.addActionListener(saveFile ->{
+            long unixTime = Instant.now().getEpochSecond();
+            String filename = new File("").getAbsolutePath() + String.valueOf(unixTime) + ".txt";
+            saveStringList(filename, data.get());
+        });
+
+
+    }
+
+
+    public static void saveStringList(String filename, ArrayList temp) {
+        try {
+            PrintWriter file = new PrintWriter( new FileWriter(filename)  ) ;
+            for (int i = 0; i < temp.size(); i++) {
+                file.println(temp.get(i));
+            }
+            file.close();
+        } catch (IOException ex) {
+            System.out.println(ex.toString());
+        }
+    }
 
     public String generateRandomNitroCode(){
         String[] characters = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
