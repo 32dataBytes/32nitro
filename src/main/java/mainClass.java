@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import javax.swing.*;
 
 public class mainClass extends JPanel {
@@ -69,6 +70,21 @@ public class mainClass extends JPanel {
             Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
             Files.createDirectories(path);
         }
+    }
+
+    public void generateNitro(JToggleButton toggleButton, JList nitroList){
+        while(toggleButton.isSelected()){
+            ArrayList<String> temp = new ArrayList<String>();
+            for (int i = 0; i < nitroList.getModel().getSize(); i++) {
+                temp.add(nitroList.getModel().getElementAt(i).toString());
+            }
+            temp.add(generateRandomNitroCode());
+            nitroList.setListData(temp.toArray(new String[0]));
+        }
+    }
+
+    public String generateRandomNitroCode(){
+        // TODO: Add the code
     }
 
     public static void main (String[] args) throws IOException {
