@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
+    <list default="true" id="fe00b104-7383-472a-ae14-fd9697206ff5" name="Default Changelist" comment="Update variable names">
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,35 @@
       <option name="presentableId" value="Default" />
       <updated>1609126359508</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update build.gradle to import FlatLAF">
+      <created>1609128113610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128113610</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Upload GUI (GUIGenie)">
+      <created>1609128138689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128138689</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update variable names">
+      <created>1609128189280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609128189280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update build.gradle to import FlatLAF" />
+    <MESSAGE value="Upload GUI (GUIGenie)" />
+    <MESSAGE value="Update variable names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update variable names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1609126469996">
@@ -69,5 +97,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="215" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609126476930" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609128191341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609128191341" />
   </component>
 </project>

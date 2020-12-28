@@ -1,7 +1,10 @@
 import java.awt.*;
-import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import javax.swing.*;
-import javax.swing.event.*;
 
 public class mainClass extends JPanel {
     private JMenuBar menuBar;
@@ -10,7 +13,9 @@ public class mainClass extends JPanel {
     private JLabel NitroOutputLabel;
     private JToggleButton startstop;
 
-    public mainClass() {
+    public mainClass() throws IOException {
+        createDirectory();
+
         //construct preComponents
         JMenu fileMenu = new JMenu ("File");
         JMenuItem save_file_as___Item = new JMenuItem ("Save File As...");
@@ -54,8 +59,14 @@ public class mainClass extends JPanel {
         startstop.setBounds (255, 105, 75, 250);
     }
 
+    public void createDirectory() throws IOException {
+        if(!new File(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/").isDirectory()){
+            Path path = Paths.get(System.getenv("APPDATA") + "32dataBytes/32nitro/nitroDumps/");
+            Files.createDirectories(path);
+        }
+    }
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws IOException {
         JFrame frame = new JFrame ("32nitro");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add (new mainClass());
