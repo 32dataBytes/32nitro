@@ -20,7 +20,7 @@ public class creditsMenu extends JPanel {
         githubButton = new JButton ("Github");
 
         //adjust size and set layout
-        setPreferredSize (new Dimension (158, 87));
+        setPreferredSize (new Dimension (150, 85));
         setLayout (null);
 
         //add components
