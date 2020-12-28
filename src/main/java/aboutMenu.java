@@ -1,3 +1,5 @@
+import com.formdev.flatlaf.FlatLightLaf;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -12,6 +14,7 @@ public class aboutMenu extends JPanel {
     private JLabel aboutLabel6;
 
     public aboutMenu() {
+        FlatLightLaf.install();
         //construct components
         aboutLabel1 = new JLabel ("32nitro is a generator for random keys for");
         aboutLabel2 = new JLabel ("a premium version of VoIP application ");
