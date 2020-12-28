@@ -1,3 +1,6 @@
+import com.formdev.flatlaf.FlatLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -14,6 +17,7 @@ public class mainClass extends JPanel {
     private JToggleButton startstop;
 
     public mainClass() throws IOException {
+        FlatLightLaf.install();
         createDirectory();
 
         //construct preComponents
