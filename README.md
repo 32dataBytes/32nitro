@@ -28,3 +28,9 @@ Navigate to File > Save File
 # Disclaimer
 I cannot guarantee any of the Nitro Tokens generated work, and I assume no responsibility for any issues that may occur. You can visit our help server above
 It works by generating random keys and saving them to a list, with the slight chance a key happens to be active and contains Nitro. Saves manual labour.
+
+# Things I might do
+dark theme
+aqua theme
+dedicated .app (lmfao mac user)
+webapp 😳
