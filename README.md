@@ -34,3 +34,5 @@ dark theme
 aqua theme
 dedicated .app (lmfao mac user)
 webapp 😳
+
+let you add dedicated nitrocheckers 
